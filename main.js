@@ -37,10 +37,12 @@ function render() {
     <h5 class="author">${book.author}</h5>
     </div>
     <div class="card-body">
-    <p>${book.pages}</p>
+    <p>Pages: ${book.pages}</p>
     <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
+    <div class="manage-book">
     <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
     <button class="toggle-read-btn" onclick="toggleRead(${i})">Toggle Read</button>
+    </div>
     </div>`;
     library.appendChild(bookEl);
   }

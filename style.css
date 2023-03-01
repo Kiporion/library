@@ -18,7 +18,7 @@ body {
   width: 8em;
 }
 
-#new-book-btn,
+button,
 input[type="submit"] {
   background-color: bisque;
   border: solid 1px brown;
@@ -80,4 +80,22 @@ input[type="submit"] {
   padding-bottom: 20px;
   border: 1px solid brown;
   border-radius: 20px;
+  text-align: center;
+}
+h5 {
+  font-style: italic;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* Card buttons */
+
+.manage-book {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.manage-book > button {
+  height: 2em;
 }
